@@ -17,6 +17,9 @@ import numpy as np
 data = None
 
 # YOUR CODE HERE 1
+data = pd.read_csv('data/1091402.txt', delim_whitespace=True,skiprows=[1],na_values=-9999)
+print(data.head())
+print(data.tail())
 
 # ### Part 2 
 # 
@@ -27,7 +30,6 @@ data = None
 
 tavg_nodata_count = None
 #YOUR CODE HERE 2
-
 
 #CAUTION!!! DON'T EDIT THIS PART START
 # Print out the solution:
