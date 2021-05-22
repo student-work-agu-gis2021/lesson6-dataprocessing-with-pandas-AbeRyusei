@@ -105,11 +105,12 @@ print('Average temperature (F) for the whole dataset:', round(avg_temp, 2))
 avg_temp_1969 = None
 
 # YOUR CODE HERE 8
-
+data_1969summer = data.query('19690501<=DATE<=19690831')
+avg_temp_1969 = np.mean(data_1969summer.iloc[:,7])
 #CAUTION!!! DON'T EDIT THIS PART START
 # This test print should print a number
 print('Average temperature (F) for the Summer of 69:', round(avg_temp_1969, 2))
-#CAUTION!!! DON'T EDIT THIS PART END
+#CAUTION!!! DON'T EDIT THIS PART pEND
 
 
 # ## Problem 2 - Calculating monthly average temperatures (*3 points*)
